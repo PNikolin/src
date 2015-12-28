@@ -23,8 +23,13 @@ public class TestClass {
     @Test
     public void Test() {
         open("http://google.by");
-
-        screenshot("testScreenshot");
         $("#hplogo").exists();
+        $("#lst-ib").setValue("nokia 3310");
+        $(".lsb").click();
+        sleep(10000);
+        $("#lst-ib").setValue("nokia 6100");
+        $(".lsb").click();
+        screenshot("testScreenshot");
+
     }
 }
