@@ -26,7 +26,7 @@ public class TestClass {
         $("#hplogo").exists();
         $("#lst-ib").setValue("nokia 3310");
         $(".lsb").click();
-        sleep(10000);
+        sleep(5000);
         $("#lst-ib").setValue("nokia 6100");
         $(".lsb").click();
         screenshot("testScreenshot");
